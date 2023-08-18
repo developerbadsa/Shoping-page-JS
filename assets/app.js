@@ -42,9 +42,4 @@ function addToCard(target){
     table.appendChild(tableRow)
     totalPrice.innerText = total
 
-
-
-
-
-
 }
