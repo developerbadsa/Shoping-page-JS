@@ -16,23 +16,33 @@
     <main class="container mx-auto bg-slate-200">
         <section class="container mx-auto px-12 py-24 flex ">
             <div class="sm:w-10/12  p-2 flex  gap-12  mx-6 justify-center">
-                  <div class="card w-80 bg-base-200 mb-6 shadow-xl">
+                  <div class="card w-80 mb-6 bg-base-200 shadow-xl">
                     <figure><img class="cover" src="./assets/img/product-4.jpeg" alt="Shoes" /></figure>
                     <div class="card-body text-center">
-                      <h2 class="card-title">Shoes! If a dog chews shoes whose shoes does he choose?</h2>
-                      <h2 class="text-lg font-medium text-amber-600 my-8">$200</h2>
+                      <h2 class="card-title"> <span id="cardTitle">Pant!</span></h2>
+                      <h2 class="text-lg font-medium text-amber-600 my-8" >$ <span id="productPrice">340</span></h2>
                       <div class="card-actions justify-center">
-                        <button class="btn bg-amber-500 hover:bg-blue-600 text-white">Add to Card</button>
+                        <button onclick="addToCard(this)" class="btn bg-amber-500 hover:bg-blue-600 text-white">Add to Card</button>
                       </div>
                     </div>
                   </div>
                   <div class="card w-80 mb-6 bg-base-200 shadow-xl">
                     <figure><img class="cover" src="./assets/img/product-4.jpeg" alt="Shoes" /></figure>
                     <div class="card-body text-center">
-                      <h2 class="card-title">Shoes! If a dog chews shoes whose shoes does he choose?</h2>
-                      <h2 class="text-lg font-medium text-amber-600 my-8">$200</h2>
+                      <h2 class="card-title"> <span id="cardTitle">Shirt!</span></h2>
+                      <h2 class="text-lg font-medium text-amber-600 my-8" >$ <span id="productPrice">50</span></h2>
                       <div class="card-actions justify-center">
-                        <button class="btn bg-amber-500 hover:bg-blue-600 text-white">Add to Card</button>
+                        <button onclick="addToCard(this)" class="btn bg-amber-500 hover:bg-blue-600 text-white">Add to Card</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-80 mb-6 bg-base-200 shadow-xl">
+                    <figure><img class="cover" src="./assets/img/product-4.jpeg" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                      <h2 class="card-title"> <span id="cardTitle">Shoes!</span></h2>
+                      <h2 class="text-lg font-medium text-amber-600 my-8" >$ <span id="productPrice">20</span></h2>
+                      <div class="card-actions justify-center">
+                        <button onclick="addToCard(this)" class="btn bg-amber-500 hover:bg-blue-600 text-white">Add to Card</button>
                       </div>
                     </div>
                   </div>
@@ -53,9 +63,9 @@
                           <th>Quantity</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="tableElement">
                         <!-- row 1 -->
-                        <tr>
+                        <!-- <tr>
                           <th>
                             <label>
                               <input type="checkbox" class="checkbox" />
@@ -75,14 +85,14 @@
                           </td>
                           <td class="font-bold">$200</td>
                           <td>2</td>
-                        </tr>
+                        </tr> -->
                       </tbody>
                       <!-- foot -->
                       <tfoot>
                         <tr>
                           <th></th>
                           <th class="font-bold">Total</th>
-                          <th class="font-bold">$200</th>
+                          <th class="font-bold">$<span id="totalPrice"></span></th>
                           <th>2</th>
                         </tr>
                       </tfoot>
